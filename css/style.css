@@ -9,6 +9,19 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2 {
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+p {
+    line-height: 1.25em;
+    font-size: 18px;
+    font-family: 'Open Sans';
+}
+
 /*MEDIA QUERY MOBILE */
 @media all and (max-width: 599px) {
 
@@ -19,6 +32,10 @@ a {
 
     li img {
         width: 65%;
+    }
+
+    li {
+        font-family: 'Open Sans';
     }
 
     ul {
@@ -38,6 +55,8 @@ a {
         grid-column: 1/2;
         grid-row: 1/2;
         align-self: center;
+        font-size: 50px;
+        text-align: center;
     }
 
     .forside {
@@ -46,43 +65,74 @@ a {
         grid-row: 1/2;
     }
 
+    /* Selve Artiklerne */
     .artikel {
         display: grid;
         place-items: center;
     }
 
-    .artikel img {
+    .artikel-billede {
         width: 60%;
         grid-row: 1/2;
+        grid-column: 1/3;
+    }
+
+    .artikel h2 {
+        font-size: 50px;
+        color: #b2b2b2;
+        grid-column: 1/3;
+    }
+
+    .svamp {
+        align-self: end;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        margin-bottom: 25%;
+    }
+
+    .svamp2 {
+        align-self: end;
+        grid-row: 1/2;
         grid-column: 1/2;
+        margin-bottom: 25%;
     }
 
     .artikel .boks {
         grid-row: 1/2;
-        grid-column: 1/2;
-        grid float: left;
-        background-color: aqua;
+        grid-column: 1/3;
+        background-color: #20a5a5;
         width: 100%;
-        padding: 20%;
-        height: 50%;
+        height: 80%;
     }
 
     .artikel p {
-        margin: 0 5%;
+        margin: 0 3%;
+        grid-column: 1/3;
     }
-
-    .artikel h2 {}
 
     .svampebuket {
         width: 30%;
         margin: 10% 0;
     }
-    
+
     /*Gro guide*/
     .gro-guide img {
         width: 100%;
     }
 
+    .gro-guide {
+        display: grid;
+        justify-items: center;
+        margin: 0 0 10%;
+    }
+
+    .gro-guide h2 {
+        text-align: center;
+    }
+
+    .gro-guide p {
+        margin: 0 3%;
+    }
 
     /*Billedegalleri*/
     .billedegalleri {
