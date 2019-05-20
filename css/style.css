@@ -1,0 +1,27 @@
+/*Navigation with flexbox mobile first*/
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*MEDIA QUERY MOBILE */
+@media all and (max-width: 599px) {
+
+    /*HEADER NAV*/
+}
+
+/*MEDIA QUERY TABLET AND ABOVE*/
+
+@media all and (min-width: 600px) {
+
+    /*HEADER NAV*/
+}
+
+/*MEDIA QUERY LAPTOP AND ABOVE*/
+
+@media all and (min-width: 1024px) {
+
+    /*HEADER*/
+}
