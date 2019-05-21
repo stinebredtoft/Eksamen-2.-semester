@@ -3,6 +3,7 @@
     border: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 a {
@@ -17,10 +18,11 @@ h2 {
 }
 
 p {
-    line-height: 1.25em;
+    line-height: 1.5em;
     font-size: 18px;
-    font-family: 'Open Sans';
+    color: gray;
 }
+
 
 /*MEDIA QUERY MOBILE */
 @media all and (max-width: 599px) {
@@ -45,6 +47,8 @@ p {
         grid-template-columns: 20% auto auto auto auto;
     }
 
+
+
     /*Indholdet*/
     article {
         display: grid;
@@ -63,6 +67,26 @@ p {
         width: 100%;
         grid-column: 1/2;
         grid-row: 1/2;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
+        justify-content: space-evenly;
+        justify-items: center;
+        padding: 5%;
+    }
+
+    #SoMe {
+        padding: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #facebook, #insta{
+        padding: 2%;
+        margin: 2%;
     }
 
     /* Selve Artiklerne */
@@ -136,16 +160,26 @@ p {
 
     /*Billedegalleri*/
     .billedegalleri {
+        background-image: url(../images/myceliumsbaggrund.png);
+    }
+    
+    .galleri {
         display: grid;
         padding: 10px;
         grid-gap: 10px;
-        background-color: antiquewhite;
+        background-image: url(../images/myceliumsbaggrund.png);
         grid-template-columns: auto auto;
     }
 
-    .billedegalleri img {
+    .galleri img {
         background-color: aquamarine;
         width: 100%;
+    }
+    
+    .billedegalleri p{
+        text-align: center;
+        color: white;
+        font-size: 2em;
     }
 }
 
