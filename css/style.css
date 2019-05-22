@@ -23,6 +23,59 @@ p {
     color: gray;
 }
 
+/*Navigation*/
+
+ header {
+     background-color: #79beb9;}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin-left: .5em;
+    color: white;
+}
+
+#logo img {
+    width: 35%;
+    position: relative;
+}
+
+label {
+    color: white;
+    font-family: sans-serif;
+    display: none; 
+}
+
+
+#logo,
+#main-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#main-nav {
+    display: flex;
+    margin-right: .5em;
+    list-style: none;
+}
+
+#main-nav a {
+    display: block;
+    margin-left: 1em;
+    font-size: 1.4em;
+    line-height: 1.4em;
+}
+
+#main-nav a:hover {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+/*nav-slut*/
+
 
 /*MEDIA QUERY MOBILE */
 @media all and (max-width: 599px) {
@@ -47,7 +100,48 @@ p {
         grid-template-columns: 20% auto auto auto auto;
     }
 
+    /*nav start*/
 
+    header {
+        background-color: #79beb9;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+    }
+
+    #main-nav li {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #main-nav a {
+        margin: 0;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+
+    /*nav slut*/
 
     /*Indholdet*/
     article {
@@ -83,8 +177,9 @@ p {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
-    #facebook, #insta{
+
+    #facebook,
+    #insta {
         padding: 2%;
         margin: 2%;
     }
@@ -162,7 +257,7 @@ p {
     .billedegalleri {
         background-image: url(../images/myceliumsbaggrund.png);
     }
-    
+
     .galleri {
         display: grid;
         padding: 10px;
@@ -175,8 +270,8 @@ p {
         background-color: aquamarine;
         width: 100%;
     }
-    
-    .billedegalleri p{
+
+    .billedegalleri p {
         text-align: center;
         color: white;
         font-size: 2em;
