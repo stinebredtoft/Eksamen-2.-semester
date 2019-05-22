@@ -6,6 +6,10 @@
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 a {
     text-decoration: none;
 }
@@ -25,8 +29,9 @@ p {
 
 /*Navigation*/
 
- header {
-     background-color: #79beb9;}
+header {
+    background-color: #79beb9;
+}
 
 #logo-burger {
     display: flex;
@@ -43,7 +48,7 @@ p {
 label {
     color: white;
     font-family: sans-serif;
-    display: none; 
+    display: none;
 }
 
 
@@ -76,6 +81,21 @@ label {
 
 /*nav-slut*/
 
+#kontaktoplysninger {
+    background-color: #79beb9;
+    opacity: 0.5;
+    color: white;
+    margin: 2%;
+}
+
+#kontaktoplysninger p,
+#kontaktoplysninger h2 {
+    color: white;
+}
+
+#kontaktoplysninger h2 {
+    text-align: center;
+}
 
 /*MEDIA QUERY MOBILE */
 @media all and (max-width: 599px) {
