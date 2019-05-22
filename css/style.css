@@ -86,6 +86,7 @@ label {
     opacity: 0.5;
     color: white;
     margin: 2%;
+    margin-bottom: 30%;
 }
 
 #kontaktoplysninger p,
@@ -95,6 +96,10 @@ label {
 
 #kontaktoplysninger h2 {
     text-align: center;
+}
+
+#baggrundsbillede {
+    background: url(../images/pier2.png) no-repeat right bottom;
 }
 
 /*MEDIA QUERY MOBILE */
