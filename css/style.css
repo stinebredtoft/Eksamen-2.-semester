@@ -276,6 +276,115 @@ label {
         color: white;
         font-size: 2em;
     }
+    
+    /* eventside */
+    .event2 {
+        color: black;
+        font-family: corbel;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    #event1 {
+        color: #003a45;
+        font-family: Britannic;
+        text-align: center;
+    }
+    
+    .event0{
+        color: black;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    .event00{
+        color: black;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    .eventcontainer {
+        margin-top: 2%;
+        border-top: 1px solid black;
+        display: grid;
+        border-bottom: 1px solid black ;
+        justify-items: center;
+        
+    
+        
+    }
+    
+     .eventcontainer2 {
+        display: grid;
+        border-bottom: 1px solid black ;
+        justify-items: center;
+      
+    }
+    
+         .eventcontainer3 {
+        display: grid;
+        border-bottom: 1px solid black ;
+        justify-items: center;
+      
+    }
+    
+    .eventcontainer4 {
+        display: grid;
+        border-bottom: 1px solid black ;
+        justify-items: center;
+      
+    }
+    
+    .circle {
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  background: #20a5a5;
+margin-bottom: 5%;
+    
+ 
+  
+}
+    .csvamp {
+        width: 70%;
+        margin-top: 10%;
+        
+    }
+    .skoel{
+        width: 50%;
+        margin-top: 8%;
+    }
+    /*tilmeldingside*/
+    
+    }
+    .kontakt-titel{
+        margin-top: 100px;
+        color: black;
+        text-transform: uppercase;
+        transition: all 4s ease-in-out;
+    }
+    #til1{
+        font-size: 32px;
+        line-height: 10px;
+        color: black;
+        font-family: helvetica;
+    }
+    #til2{
+        font-size: 16px;
+        color: black;
+        font-family: helvetica;
+    }
+    form{
+        margin-top: 50px;
+        transition: all 4s ease-in-out;
+    }
 }
 
 /*MEDIA QUERY TABLET AND ABOVE*/
@@ -283,6 +392,91 @@ label {
 @media all and (min-width: 600px) {
 
     /*HEADER NAV*/
+    #main-nav {
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    
+    /*eventside*/
+    .event2 {
+        color: black;
+        font-family: corbel;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    #event1 {
+        color: #003a45;
+        font-family: Britannic;
+        text-align: center;
+        font-size: 50px;
+    }
+    
+    .event0{
+        color: black;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+    .eventcontainer {
+        margin-top: 2%;
+        border-top: 1px solid black;
+        display: grid;
+        border-bottom: 1px solid black ;
+        justify-items: center;
+        
+    
+        
+    }
+    
+     .eventcontainer2 {
+        display: grid;
+        border-bottom: 1px solid black ;
+        justify-items: center;
+      
+    }
+    
+         .eventcontainer3 {
+        display: grid;
+        border-bottom: 1px solid black ;
+        justify-items: center;
+      
+    }
+    
+    .eventcontainer4 {
+        display: grid;
+        border-bottom: 1px solid black ;
+        justify-items: center;
+      
+    }
+    
+    .circle {
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  background: #20a5a5;
+margin-bottom: 5%;
+    
+ 
+  
+}
+    .csvamp {
+        width: 70%;
+        margin-top: 10%;
+        
+    }
+    .skoel{
+        width: 50%;
+        margin-top: 8%;
+    }
 }
 
 /*MEDIA QUERY LAPTOP AND ABOVE*/
@@ -290,4 +484,90 @@ label {
 @media all and (min-width: 1024px) {
 
     /*HEADER*/
+
+/*eventside*/
+.event2 {
+        color: black;
+        font-family: corbel;
+        margin-top: 5%;
+    }
+    
+    #event1 {
+        color: #003a45;
+        font-family: Britannic;
+        font-size: 50px;
+    }
+    
+    .event00{
+        color: black;
+        margin-bottom: 5%;
+        margin-right: 70%;
+        margin-left: 1%;
+        
+        
+    }
+    .eventcontainer {
+        margin-top: 2%;
+        border-top: 1px solid black;
+        display: grid;
+        border-bottom: 1px solid black ;
+         margin-right: 72%;
+        margin-left: 1%;
+        
+    
+        
+    }
+    
+     .eventcontainer2 {
+        display: grid;
+        border-bottom: 1px solid black ;
+         margin-right: 72%;
+        margin-left: 1%;
+      
+    }
+    
+         .eventcontainer3 {
+        display: grid;
+        border-bottom: 1px solid black ;
+          margin-right: 72%;
+        margin-left: 1%;
+      
+    }
+    
+    .eventcontainer4 {
+        display: grid;
+        border-bottom: 1px solid black ;
+        margin-right: 72%;
+        margin-left: 1%;
+        
+      
+    }
+    
+    .circle {
+
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: white;
+  line-height: 50px;
+  text-align: center;
+  background: #20a5a5;
+margin-bottom: 5%;
+        margin-left: 5%
+    
+ 
+  
 }
+    .csvamp {
+        width: 70%;
+        margin-top: 10%;
+        
+    }
+    .skoel{
+        width: 50%;
+        margin-top: 8%;
+    }
+    
+    
+        
