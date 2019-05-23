@@ -198,6 +198,7 @@ textarea {
     .artikel2 {
         display: grid;
         place-items: center;
+        margin: 10% 0;
     }
 
     .artikel-billede {
@@ -264,6 +265,8 @@ textarea {
 
     .gro-guide h2 {
         text-align: center;
+        color: black;
+        margin: 5%;
     }
 
     .gro-guide p {
