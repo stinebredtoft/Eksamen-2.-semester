@@ -266,7 +266,8 @@ textarea {
     .gro-guide h2 {
         text-align: center;
         color: black;
-        margin: 5%;
+        margin: 10% 0 0;
+        grid-row: 1/2;
     }
 
     .gro-guide p {
@@ -426,11 +427,15 @@ textarea {
         grid-column: 1/3;
     }
 
+    .svampen1,.svampen2 {
+        width: 45%;
+    }
+
     .svamp {
         align-self: end;
         grid-row: 1/2;
         grid-column: 2/3;
-        margin-bottom: 25%;
+        margin-bottom: 50%;
     }
 
     .svamp2 {
@@ -669,6 +674,7 @@ textarea {
     .svampen1 {
         grid-column: 1/2;
         grid-row: 1/2;
+        width: 100%;
     }
 
     .artikel .svamp2 {
@@ -692,6 +698,7 @@ textarea {
     .svampen2 {
         grid-column: 2/3;
         grid-row: 1/2;
+        width: 100%;
     }
 
     .svampebuket {
