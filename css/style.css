@@ -328,11 +328,10 @@ textarea {
     }
 
     .eventcontainer {
-        margin-top: 2%;
         display: grid;
         border-bottom: 1px solid black;
         justify-items: center;
-        margin: 0 5%;
+        margin: 2% 5% 0;
     }
 
     .circle {
@@ -542,11 +541,11 @@ textarea {
     }
 
     .eventcontainer {
-        margin-top: 2%;
         display: grid;
         border-bottom: 1px solid black;
         justify-items: center;
-        margin: 0 5%;
+        margin: 2% 5% 0;
+        padding: 0 10%;
     }
 
     .circle {
@@ -557,7 +556,7 @@ textarea {
         color: white;
         line-height: 50px;
         text-align: center;
-        background: #20a5a5;
+        background-color: #20a5a5;
         margin-bottom: 5%;
     }
 
@@ -722,6 +721,11 @@ textarea {
 
     .event-manchet {
         grid-column: 1/2;
+    }
+    
+    .circle:hover {
+        background-color: aqua;
+        transition: 1.5s;
     }
     /*Billedgalleri*/
     .billedegalleri {
