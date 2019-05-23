@@ -617,7 +617,7 @@ textarea {
 
     .artikel h2 {
         font-size: 50px;
-        color: black;
+        color: white;
         align-self: end;
         grid-column: 3/4;
         grid-row: 1/2;
@@ -625,7 +625,7 @@ textarea {
 
     .artikel2 h2 {
         font-size: 50px;
-        color: black;
+        color: white;
         align-self: end;
         grid-column: 1/2;
         grid-row: 1/2;
@@ -635,12 +635,14 @@ textarea {
         grid-column: 3/4;
         grid-row: 2/3;
         align-self: start;
+        color: white
     }
 
     .artikel2 p {
         grid-column: 1/2;
         grid-row: 2/3;
         align-self: start;
+        color: white;
     }
 
     .svamp {
