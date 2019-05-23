@@ -45,11 +45,16 @@ header {
     position: relative;
 }
 
-label {
-    color: white;
-    font-family: sans-serif;
-    display: none;
+label, input, textarea{
+  display: block;  
 }
+
+.burger-label {
+    color: #fff;
+    font-family: sans-serif;
+    display:none;
+}
+
 
 
 #logo,
@@ -387,30 +392,13 @@ margin-bottom: 5%;
         margin-top: 8%;
     }
     /*tilmeldingside*/
+    .tilmeld{
+        color: black;
+        font-family: helvetica;
+    }
+    }
     
-    }
-    .kontakt-titel{
-        margin-top: 100px;
-        color: black;
-        text-transform: uppercase;
-        transition: all 4s ease-in-out;
-    }
-    #til1{
-        font-size: 32px;
-        line-height: 10px;
-        color: black;
-        font-family: helvetica;
-    }
-    #til2{
-        font-size: 16px;
-        color: black;
-        font-family: helvetica;
-    }
-    form{
-        margin-top: 50px;
-        transition: all 4s ease-in-out;
-    }
-}
+
 
 /*MEDIA QUERY TABLET AND ABOVE*/
 
@@ -594,5 +582,5 @@ margin-bottom: 5%;
         margin-top: 8%;
     }
     
-    
+}
         
