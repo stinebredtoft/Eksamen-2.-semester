@@ -394,7 +394,7 @@ textarea {
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
-     
+
     }
 
     .flex-outer {
@@ -402,7 +402,7 @@ textarea {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
-     
+
 
     }
 
@@ -825,6 +825,37 @@ textarea {
         grid-column: 2/3;
         grid-row: 2/3;
         color: white;
+    }
+
+    /*keyframing SVG*/
+    .optegn-svampen1,
+    .optegn-svampen2 {
+        stroke: #fff;
+        stroke-dasharray: 200;
+        opacity: 10;
+        animation: animate 3s cubic-bezier(0,0.23,1,.1)
+    }
+    
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            fill: none;
+            stroke-dashoffset: 200;
+        }
+        
+        30% {
+            opacity: 10;
+            fill: none;
+            stroke-dashoffset: 200;
+        }
+        
+        90% {
+            fill: none;
+        }
+        
+        100% {
+            fill: #fff;
+        }
     }
 
 
