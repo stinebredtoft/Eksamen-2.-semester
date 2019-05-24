@@ -49,6 +49,7 @@ label,
 input,
 textarea {
     display: block;
+    
 }
 
 .burger-label {
@@ -352,6 +353,34 @@ textarea {
     }
 
     /*tilmeldingside*/
+    .tilmeld {
+        color: black;
+        font-family: inherit;
+        font-size: 35px;
+        margin-bottom: 4%;
+    }
+    
+    .submit{
+        width: 70px;
+        
+        
+    }
+    .flex-outer{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+        
+        
+    }
+    textarea{
+    align-content: center;
+    }
+    li input{
+        
+    }
+    
     /*Footer*/
     footer {
         display: grid;
