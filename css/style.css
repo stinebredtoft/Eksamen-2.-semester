@@ -189,7 +189,7 @@ textarea {
         text-align: left;
         padding: 5%;
     }
-    
+
 
     .forside {
         width: 100%;
@@ -218,16 +218,15 @@ textarea {
         grid-column: 1/3;
     }
 
-<<<<<<< HEAD
     .svampen1,
     .svampen2 {
         width: 35%;
-=======
+    }
+
     /* SVG optegning */
     .optegn-svampen1,
     .optegn-svampen2 {
         fill: #fff;
->>>>>>> 8b1e0567122d883821bbcbc0e2093ea61deead44
     }
 
     /* Slutter her*/
@@ -347,7 +346,7 @@ textarea {
         justify-items: center;
         margin: 2% 5% 0;
     }
-    
+
     .eventcontainer h3 {
         color: gray;
     }
