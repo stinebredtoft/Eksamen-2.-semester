@@ -49,7 +49,7 @@ label,
 input,
 textarea {
     display: block;
-    
+
 }
 
 .burger-label {
@@ -175,9 +175,9 @@ textarea {
     }
 
     /*nav slut*/
-    
+
     /*h1 overskrifter*/
-    
+
     #forside-overskrift {
         padding-top: 12%;
     }
@@ -225,12 +225,6 @@ textarea {
         grid-column: 1/3;
     }
 
-    .svampen1,
-    .svampen2 {
-        width: 35%;}
-}
-
-
     /* SVG optegning */
     .optegn-svampen1,
     .optegn-svampen2 {
@@ -251,10 +245,14 @@ textarea {
     }
 
     .svamp2 {
-        align-self: end;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: end;
+        justify-self: start;
         grid-row: 1/2;
-        grid-column: 1/2;
-        margin-bottom: 25%;
+        grid-column: 1/3;
+        width: 40%;
+        padding: 20% 0 0;
     }
 
     .artikel .boks,
@@ -383,28 +381,29 @@ textarea {
         font-size: 35px;
         margin-bottom: 4%;
     }
-    
-    .submit{
+
+    .submit {
         width: 70px;
-        
-        
+
+
     }
-    .flex-outer{
-        display:flex;
+
+    .flex-outer {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
         font-size: 20px;
-        
-        
+
+
     }
-    textarea{
-    align-content: center;
+
+    textarea {
+        align-content: center;
     }
-    li input{
-        
-    }
-    
+
+    li input {}
+
     /*Footer*/
     footer {
         display: grid;
@@ -479,11 +478,6 @@ textarea {
         grid-column: 1/3;
     }
 
-    .svampen1,
-    .svampen2 {
-        width: 45%;
-    }
-
     /* SVG optegning */
     .optegn-svampen1,
     .optegn-svampen2 {
@@ -504,10 +498,14 @@ textarea {
     }
 
     .svamp2 {
-        align-self: end;
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: end;
+        justify-self: start;
         grid-row: 1/2;
-        grid-column: 1/2;
-        margin-bottom: 25%;
+        grid-column: 1/3;
+        width: 40%;
+        padding: 20% 0 0;
     }
 
     .artikel .boks,
@@ -701,7 +699,6 @@ textarea {
     .artikel h2 {
         font-size: 50px;
         color: white;
-        align-self: end;
         grid-column: 3/4;
         grid-row: 1/2;
     }
@@ -709,7 +706,6 @@ textarea {
     .artikel2 h2 {
         font-size: 50px;
         color: white;
-        align-self: end;
         grid-column: 1/2;
         grid-row: 1/2;
     }
@@ -735,19 +731,10 @@ textarea {
         width: 60%;
     }
 
-    .artikel2 .svamp2 {
-        display: grid;
-        margin: 0;
-        grid-row: 1/3;
-        grid-column: 2/3;
-        width: 100%;
-        justify-self: start;
-    }
-
-    .svampen2 {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        width: 100%;
+    .svamp2 {
+        grid-row: 2/3;
+        grid-column: 3/4;
+        width: 60%;
     }
 
     .svampebuket {
