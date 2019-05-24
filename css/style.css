@@ -394,10 +394,7 @@ textarea {
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
-        width: 70px;
-
-
-
+     
     }
 
     .flex-outer {
@@ -405,41 +402,29 @@ textarea {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
-        background-color: 
-  
+     
+
     }
 
     textarea {
         width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+        padding: 12px 29px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
     }
 
     li input {
         width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
     }
-
-        
-
-
-   
-
-    textarea {
-        align-content: center;
-    }
-
-    
-
 
     /*Footer*/
     footer {
