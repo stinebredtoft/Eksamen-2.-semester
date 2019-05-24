@@ -217,6 +217,10 @@ textarea {
     .svampen1,.svampen2 {
         width: 35%;
     }
+    
+    .optegn-svampen2 {
+        fill: #fff;
+    }
 
     .svamp {
         align-self: end;
@@ -428,6 +432,10 @@ textarea {
 
     .svampen1,.svampen2 {
         width: 45%;
+    }
+    
+    .optegn-svampen2 {
+        fill: #fff;
     }
 
     .svamp {
