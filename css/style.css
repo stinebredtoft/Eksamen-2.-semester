@@ -89,12 +89,19 @@ textarea {
 
 /*KONTAKT start*/
 
+#baggrundsbillede {
+    background: url(../images/pier2.png) no-repeat right bottom;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 #kontaktoplysninger {
     background-color: #79beb9;
     opacity: 0.8;
     color: white;
     margin: 2%;
     margin-bottom: 30%;
+    grid-column: 1/3;
 }
 
 #kontaktoplysninger p,
@@ -106,9 +113,6 @@ textarea {
     text-align: center;
 }
 
-#baggrundsbillede {
-    background: url(../images/pier2.png) no-repeat right bottom;
-}
 
 /*MEDIA QUERY MOBILE */
 @media all and (max-width: 599px) {
@@ -608,6 +612,13 @@ textarea {
         font-size: 2em;
     }
 
+    
+    /*KONTAKT*/
+    
+    #kontaktoplysninger {
+    grid-column: 1/2; 
+}
+    
     /*eventside*/
     .event-underoverskrift {
         grid-row: 1/2;
@@ -702,6 +713,9 @@ textarea {
     h1 {
         font-size: 80px;
     }
+    
+    /*FORSIDE*/
+    
 
     /*Selve artiklerne*/
     .artikel,
