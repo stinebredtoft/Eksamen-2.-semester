@@ -447,7 +447,7 @@ textarea {
 
     #SoMe {
         justify-self: end;
-        padding: 10%;
+        padding: 5%;
         display: grid;
         grid-template-rows: auto auto; 
     }
