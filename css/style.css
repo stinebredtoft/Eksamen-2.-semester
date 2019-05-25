@@ -325,6 +325,8 @@ textarea {
     .event-underoverskrift {
         grid-row: 1/2;
         text-align: center;
+        color: gray;
+        padding-top: 10%;
     }
 
     #event-overskrift {
@@ -367,11 +369,20 @@ textarea {
         text-align: center;
         background: #20a5a5;
         margin-bottom: 5%;
+        /*display: grid;
+        grid-template-columns: auto;*/
     }
 
+    
+    /*.cirkelindhold {
+        align-self: center;
+        justify-self: center; 
+        padding: 10%;
+    }*/
     .circle img {
         width: 50%;
-        margin-top: 10%;
+        padding-top: 10%;
+        /*place-self: center;*/
     }
 
     /*tilmeldingside*/
@@ -431,15 +442,14 @@ textarea {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2%;
-        justify-content: space-evenly;
-        justify-items: center;
         padding: 5%;
     }
 
     #SoMe {
+        justify-self: end;
         padding: 10%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto; 
     }
 
     #facebook,
@@ -448,6 +458,9 @@ textarea {
         margin: 2%;
     }
 
+    #insta {
+        grid-row: 2/3;
+    }
 }
 
 /*MEDIA QUERY TABLET AND ABOVE*/
@@ -598,28 +611,27 @@ textarea {
     /*eventside*/
     .event-underoverskrift {
         grid-row: 1/2;
-        color: black;
-        font-family: corbel;
+        color: gray;
         text-align: center;
         font-size: 25px;
+        padding-top: 10%;
     }
 
     #event-overskrift {
         grid-row: 2/3;
         font-size: 60px;
-        color: #003a45;
-        font-family: Britannic;
+        color: gray;
         text-align: center;
     }
 
     .event-tekst {
-        color: black;
+        color: gray;
         margin: 0 5% 5%;
         text-align: center;
     }
 
     .event-manchet {
-        color: black;
+        color: gray;
         margin: 0 5%;
         padding: 0 0 5%;
         text-align: center;
@@ -632,6 +644,7 @@ textarea {
         justify-items: center;
         margin: 2% 5% 0;
         padding: 0 10%;
+        color: gray;
     }
 
     .circle {
@@ -664,9 +677,11 @@ textarea {
     }
 
     #SoMe {
+        justify-self: end;
         padding: 10%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
     }
 
     #facebook,
