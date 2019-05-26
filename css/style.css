@@ -686,6 +686,16 @@ textarea {
     #logo {
         margin: 5px 0 0 50px;
     }
+    
+    #main-nav a {
+        padding: 5%;
+    }
+    
+    #main-nav a:hover {
+        color: #79beb9;
+        background-color: #fff;
+        transition: 1s;
+    }
 
     /*Overskrift ved header*/
     h1 {
@@ -698,8 +708,8 @@ textarea {
     /*Selve artiklerne*/
     .artikel,
     .artikel2 {
-        width: 90%;
-        margin: 5% 0 0;
+        width: 95%;
+        margin: 5% 0 ;
     }
 
     .artikel .boks,
@@ -712,7 +722,7 @@ textarea {
     }
 
     .artikel-billede {
-        width: 80%;
+        width: 100%;
         grid-column: 1/2;
         grid-row: 1/3;
         justify-self: start;
@@ -737,6 +747,7 @@ textarea {
         color: white;
         grid-column: 1/2;
         grid-row: 1/2;
+        align-self: end;
     }
 
     .artikel p {
@@ -768,7 +779,7 @@ textarea {
 
     .svampebuket {
         width: 15%;
-        margin: 3% 0;
+        margin: 0;
     }
 
     /*eventside*/
@@ -810,7 +821,7 @@ textarea {
     .gro-guide {
         grid-template-columns: auto auto auto;
         padding: 50px;
-        margin: 0 auto;
+        margin: 5% 0;
         align-items: center;
         background-color: #20a5a5;
         grid-gap: 10px;
@@ -825,6 +836,7 @@ textarea {
     .gro-guide img {
         grid-column: 1/2;
         grid-row: 2/3;
+        width: 85%;
     }
 
     .gro-guide p {
@@ -840,7 +852,7 @@ textarea {
         stroke: #fff;
         stroke-dasharray: 200;
         opacity: 10;
-        animation: animate 3s cubic-bezier(0, 0.23, 1, .1)
+        animation: animate 5s;
     }
 
     @keyframes animate {
@@ -850,7 +862,7 @@ textarea {
             stroke-dashoffset: 200;
         }
 
-        30% {
+        10% {
             opacity: 10;
             fill: none;
             stroke-dashoffset: 200;
