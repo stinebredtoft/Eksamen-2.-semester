@@ -103,6 +103,11 @@ textarea {
     text-align: center;
 }
 
+#kontakth1, #omh1 {
+    place-self: start;
+    padding: 5%;
+}
+
 
 /*MEDIA QUERY MOBILE */
 @media all and (max-width: 599px) {
@@ -313,6 +318,7 @@ textarea {
         text-align: center;
         justify-self: center;
     }
+    
 
     .event-tekst {
         margin: 0 5% 5%;
@@ -447,6 +453,7 @@ textarea {
         grid-template-columns: auto auto;
         align-items: center;
     }
+
     #main-nav {
         display: grid;
         grid-template-columns: auto auto auto auto;
@@ -686,11 +693,11 @@ textarea {
     #logo {
         margin: 5px 0 0 50px;
     }
-    
+
     #main-nav a {
         padding: 5%;
     }
-    
+
     #main-nav a:hover {
         color: #79beb9;
         background-color: #fff;
@@ -709,7 +716,7 @@ textarea {
     .artikel,
     .artikel2 {
         width: 95%;
-        margin: 5% 0 ;
+        margin: 5% 0;
     }
 
     .artikel .boks,
