@@ -1,7 +1,7 @@
 * {
     padding: 0;
     border: 0;
-    margin:0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
@@ -36,22 +36,17 @@ header {
 #logo-burger {
     display: flex;
     align-items: center;
-    margin-left: .5em;
-    color: white;
 }
 
 #logo img {
     width: 35%;
     position: relative;
-    
 }
-
 
 label,
 input,
 textarea {
     display: block;
-
 }
 
 .burger-label {
@@ -60,32 +55,20 @@ textarea {
     display: none;
 }
 
-#logo,
+#main-nav {
+    display: flex;
+    list-style: none;
+}
+
 #main-nav a {
+    display: flex;
+    flex-wrap: wrap;
     color: white;
     text-decoration: none;
     font-family: Neucha;
-    
-    
-}
-
-#main-nav {
-    display: flex;
-    margin-right: .5em;
-    list-style: none;
-  
-}
-
-#main-nav a {
-    display: flex;
-    margin-left: 3.4em;
+    justify-content: center;
     font-size: 2.0em;
     line-height: 1.4em;
-    
-}
-
-#main-nav a:hover {
-    color: white;
 }
 
 .hidden {
@@ -125,23 +108,15 @@ textarea {
 @media all and (max-width: 599px) {
 
     /*HEADER NAV*/
-    nav {
-        background-color: #79beb9;
-    }
 
     li img {
         width: 65%;
     }
 
-    li {
-        font-family: 'Open Sans';
-    }
-
-    ul {
+    ul li {
         display: grid;
         list-style-type: none;
-        place-items: center;
-        grid-template-columns: 20% auto auto auto auto;
+        justify-items: center;
     }
 
     /*nav start*/
@@ -154,7 +129,6 @@ textarea {
 
     #logo-burger {
         justify-content: space-between;
-        align-items: center;
     }
 
     #logo-burger label {
@@ -172,13 +146,13 @@ textarea {
     }
 
     #main-nav li {
-        text-align: center;
         border-top: 1px solid rgba(255, 255, 255, 0.3);
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
 
     #main-nav a {
         margin: 0;
+        padding: 0 10%;
     }
 
     #main-nav li:last-of-type {
@@ -189,10 +163,6 @@ textarea {
 
     /*h1 overskrifter*/
 
-    #forside-overskrift {
-        padding-top: 12%;
-    }
-
     /*Indholdet*/
     article {
         display: grid;
@@ -202,12 +172,9 @@ textarea {
     h1 {
         grid-column: 1/2;
         grid-row: 1/2;
-        justify-self: start;
+        align-self: center;
         font-size: 50px;
-        text-align: left;
-        padding: 5%;
     }
-
 
     .forside {
         width: 100%;
@@ -384,7 +351,7 @@ textarea {
         grid-template-columns: auto;*/
     }
 
-    
+
     /*.cirkelindhold {
         align-self: center;
         justify-self: center; 
@@ -399,14 +366,13 @@ textarea {
     /*tilmeldingside*/
     .tilmeld {
         color: black;
-        font-family:helvetica;
+        font-family: helvetica;
         font-size: 35px;
         margin-bottom: 4%;
         text-align: center;
     }
 
     .submit {
-
         background-color: #4CAF50;
         border: none;
         color: white;
@@ -416,7 +382,6 @@ textarea {
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
-
     }
 
     .flex-outer {
@@ -424,8 +389,6 @@ textarea {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
-
-
     }
 
     textarea {
@@ -460,7 +423,7 @@ textarea {
         justify-self: end;
         padding: 5%;
         display: grid;
-        grid-template-rows: auto auto; 
+        grid-template-rows: auto auto;
     }
 
     #facebook,
@@ -479,9 +442,14 @@ textarea {
 @media all and (min-width: 600px) {
 
     /*HEADER NAV*/
+    header {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+    }
     #main-nav {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
     }
 
     /*Indholdet på hjemmesiden*/
@@ -619,13 +587,13 @@ textarea {
         font-size: 2em;
     }
 
-    
+
     /*KONTAKT*/
-    
+
     #kontaktoplysninger {
-    grid-column: 1/2; 
-}
-    
+        grid-column: 1/2;
+    }
+
     /*eventside*/
     .event-underoverskrift {
         grid-row: 1/2;
@@ -715,18 +683,17 @@ textarea {
 @media all and (min-width: 1024px) {
 
     /*HEADER*/
-    
-    .forside {
-        width: 75%;
+    #logo {
+        margin: 5px 0 0 50px;
     }
 
     /*Overskrift ved header*/
     h1 {
         font-size: 80px;
     }
-    
+
     /*FORSIDE*/
-    
+
 
     /*Selve artiklerne*/
     .artikel,
@@ -873,26 +840,26 @@ textarea {
         stroke: #fff;
         stroke-dasharray: 200;
         opacity: 10;
-        animation: animate 3s cubic-bezier(0,0.23,1,.1)
+        animation: animate 3s cubic-bezier(0, 0.23, 1, .1)
     }
-    
+
     @keyframes animate {
         0% {
             opacity: 0;
             fill: none;
             stroke-dashoffset: 200;
         }
-        
+
         30% {
             opacity: 10;
             fill: none;
             stroke-dashoffset: 200;
         }
-        
+
         90% {
             fill: none;
         }
-        
+
         100% {
             fill: #fff;
         }
