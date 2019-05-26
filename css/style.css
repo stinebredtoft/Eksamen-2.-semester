@@ -1,7 +1,7 @@
 * {
     padding: 0;
     border: 0;
-    margin: 0;
+    margin:0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
@@ -43,7 +43,9 @@ header {
 #logo img {
     width: 35%;
     position: relative;
+    
 }
+
 
 label,
 input,
@@ -62,19 +64,24 @@ textarea {
 #main-nav a {
     color: white;
     text-decoration: none;
+    font-family: Neucha;
+    
+    
 }
 
 #main-nav {
     display: flex;
     margin-right: .5em;
     list-style: none;
+  
 }
 
 #main-nav a {
-    display: block;
-    margin-left: 1em;
-    font-size: 1.4em;
+    display: flex;
+    margin-left: 3.4em;
+    font-size: 2.0em;
     line-height: 1.4em;
+    
 }
 
 #main-nav a:hover {
@@ -377,7 +384,7 @@ textarea {
     /*tilmeldingside*/
     .tilmeld {
         color: black;
-        font-family: inherit;
+        font-family:helvetica;
         font-size: 35px;
         margin-bottom: 4%;
         text-align: center;
@@ -682,6 +689,10 @@ textarea {
 @media all and (min-width: 1024px) {
 
     /*HEADER*/
+    
+    .forside {
+        width: 75%;
+    }
 
     /*Overskrift ved header*/
     h1 {
@@ -761,7 +772,7 @@ textarea {
 
     .svampebuket {
         width: 15%;
-        margin: 10% 0;
+        margin: 3% 0;
     }
 
     /*eventside*/
