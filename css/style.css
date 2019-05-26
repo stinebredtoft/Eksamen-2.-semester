@@ -854,6 +854,10 @@ textarea {
     }
 
     /*keyframing SVG*/
+    .gemt {
+        opacity: 0;
+    }
+    
     .optegn-svampen1,
     .optegn-svampen2 {
         stroke: #fff;
