@@ -96,12 +96,19 @@ textarea {
 
 /*KONTAKT start*/
 
+#baggrundsbillede {
+    background: url(../images/pier2.png) no-repeat right bottom;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 #kontaktoplysninger {
     background-color: #79beb9;
     opacity: 0.8;
     color: white;
     margin: 2%;
     margin-bottom: 30%;
+    grid-column: 1/3;
 }
 
 #kontaktoplysninger p,
@@ -113,9 +120,6 @@ textarea {
     text-align: center;
 }
 
-#baggrundsbillede {
-    background: url(../images/pier2.png) no-repeat right bottom;
-}
 
 /*MEDIA QUERY MOBILE */
 @media all and (max-width: 599px) {
@@ -332,6 +336,8 @@ textarea {
     .event-underoverskrift {
         grid-row: 1/2;
         text-align: center;
+        color: gray;
+        padding-top: 10%;
     }
 
     #event-overskrift {
@@ -374,11 +380,20 @@ textarea {
         text-align: center;
         background: #20a5a5;
         margin-bottom: 5%;
+        /*display: grid;
+        grid-template-columns: auto;*/
     }
 
+    
+    /*.cirkelindhold {
+        align-self: center;
+        justify-self: center; 
+        padding: 10%;
+    }*/
     .circle img {
         width: 50%;
-        margin-top: 10%;
+        padding-top: 10%;
+        /*place-self: center;*/
     }
 
     /*tilmeldingside*/
@@ -401,7 +416,7 @@ textarea {
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
-     
+
     }
 
     .flex-outer {
@@ -409,7 +424,7 @@ textarea {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
-     
+
 
     }
 
@@ -438,15 +453,14 @@ textarea {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2%;
-        justify-content: space-evenly;
-        justify-items: center;
         padding: 5%;
     }
 
     #SoMe {
-        padding: 10%;
+        justify-self: end;
+        padding: 5%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto; 
     }
 
     #facebook,
@@ -455,6 +469,9 @@ textarea {
         margin: 2%;
     }
 
+    #insta {
+        grid-row: 2/3;
+    }
 }
 
 /*MEDIA QUERY TABLET AND ABOVE*/
@@ -602,31 +619,37 @@ textarea {
         font-size: 2em;
     }
 
+    
+    /*KONTAKT*/
+    
+    #kontaktoplysninger {
+    grid-column: 1/2; 
+}
+    
     /*eventside*/
     .event-underoverskrift {
         grid-row: 1/2;
-        color: black;
-        font-family: corbel;
+        color: gray;
         text-align: center;
         font-size: 25px;
+        padding-top: 10%;
     }
 
     #event-overskrift {
         grid-row: 2/3;
         font-size: 60px;
-        color: #003a45;
-        font-family: Britannic;
+        color: gray;
         text-align: center;
     }
 
     .event-tekst {
-        color: black;
+        color: gray;
         margin: 0 5% 5%;
         text-align: center;
     }
 
     .event-manchet {
-        color: black;
+        color: gray;
         margin: 0 5%;
         padding: 0 0 5%;
         text-align: center;
@@ -639,6 +662,7 @@ textarea {
         justify-items: center;
         margin: 2% 5% 0;
         padding: 0 10%;
+        color: gray;
     }
 
     .circle {
@@ -671,9 +695,11 @@ textarea {
     }
 
     #SoMe {
+        justify-self: end;
         padding: 10%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
     }
 
     #facebook,
@@ -698,6 +724,9 @@ textarea {
     h1 {
         font-size: 80px;
     }
+    
+    /*FORSIDE*/
+    
 
     /*Selve artiklerne*/
     .artikel,
@@ -836,6 +865,37 @@ textarea {
         grid-column: 2/3;
         grid-row: 2/3;
         color: white;
+    }
+
+    /*keyframing SVG*/
+    .optegn-svampen1,
+    .optegn-svampen2 {
+        stroke: #fff;
+        stroke-dasharray: 200;
+        opacity: 10;
+        animation: animate 3s cubic-bezier(0,0.23,1,.1)
+    }
+    
+    @keyframes animate {
+        0% {
+            opacity: 0;
+            fill: none;
+            stroke-dashoffset: 200;
+        }
+        
+        30% {
+            opacity: 10;
+            fill: none;
+            stroke-dashoffset: 200;
+        }
+        
+        90% {
+            fill: none;
+        }
+        
+        100% {
+            fill: #fff;
+        }
     }
 
 
