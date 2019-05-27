@@ -975,7 +975,6 @@ textarea {
         stroke-dasharray: 200;
         opacity: 10;
         animation: animate 5s;
-        animation-play-state: paused;
     }
 
     @keyframes animate {
