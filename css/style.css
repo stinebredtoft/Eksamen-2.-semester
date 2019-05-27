@@ -103,7 +103,8 @@ textarea {
     text-align: center;
 }
 
-#kontakth1, #omh1 {
+#kontakth1,
+#omh1 {
     place-self: start;
     padding: 5%;
 }
@@ -318,7 +319,7 @@ textarea {
         text-align: center;
         justify-self: center;
     }
-    
+
 
     .event-tekst {
         margin: 0 5% 5%;
@@ -958,9 +959,18 @@ textarea {
     }
 
 
+    .forside-optegn {
+        width: 100%;
+        display: grid;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 1% 0 0 5%;
+    }
+
     /*keyframing SVG*/
     .optegn-svampen1,
-    .optegn-svampen2 {
+    .optegn-svampen2,
+    .cls-1 {
         stroke: #fff;
         stroke-dasharray: 200;
         opacity: 10;
