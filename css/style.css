@@ -334,6 +334,8 @@ textarea {
 
     .event-tekst {
         margin: 0 5% 5%;
+        margin-bottom: 10%;
+        margin-top: 5%;
         text-align: center;
     }
 
@@ -364,9 +366,13 @@ textarea {
         line-height: 50px;
         text-align: center;
         background: #20a5a5;
-        margin-bottom: 5%;
+        margin-bottom: 8%;
+        margin-top: 6%;
         /*display: grid;
         grid-template-columns: auto;*/
+    }
+    .imagecontainer{
+        display: none;
     }
 
 
@@ -727,6 +733,7 @@ textarea {
         border-radius: 4px;
         box-sizing: border-box;
     }
+    
 
     /*Footer*/
     footer {
@@ -870,10 +877,24 @@ textarea {
     }
 
     /*eventside*/
-    .eventcontainer {
-        grid-column: 1/2;
+     
+        
+    
+     .billedcontainer {
+      display: grid;
+         grid-template-columns: 50% 50%;
+         grid-template-rows: auto;
+         grid-template-areas: "t b";
     }
 
+.amazingcontainer{
+        display: grid;
+         grid-area: t;
+    width: 100%;
+}
+    
+   
+   
     .event-underoverskrift {
         grid-column: 1/2;
     }
@@ -882,15 +903,28 @@ textarea {
         grid-column: 1/2;
     }
 
-    .event-manchet {
-        grid-column: 1/2;
-    }
+
 
     .circle:hover {
         background-color: aqua;
         transition: 1.5s;
     }
-
+    .imagecontainer {
+        display: grid;
+        grid-area: b;
+       
+    }
+    .imagecontainer img{
+      
+            
+    }
+    #billede2{
+        width: 100%;
+    }
+ 
+    
+    
+    
     /*Billedgalleri*/
     .galleri {
         width: 70%;
