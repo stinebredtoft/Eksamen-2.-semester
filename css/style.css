@@ -659,6 +659,56 @@ textarea {
     }
 
     /*tilmeldingside*/
+.tilmeld {
+        color: black;
+        font-family:helvetica;
+        font-size: 35px;
+        margin-bottom: 4%;
+        text-align: center;
+    }
+
+    .submit {
+
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 39px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+
+    }
+
+    .flex-outer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+
+
+    }
+
+    textarea {
+        width: 100%;
+        padding: 12px 29px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    li input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
 
     /*Footer*/
     footer {
@@ -853,6 +903,61 @@ textarea {
         grid-row: 2/3;
         color: white;
     }
+    
+    /*tilmeldning*/ 
+    .tilmeld {
+        color: black;
+        font-family:Neucha;
+        font-size: 35px;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    .submit {
+
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 39px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+
+    }
+
+    .flex-outer {
+        display: flex;
+        margin-left: 30%;
+        margin-right: 30%;
+        list-style: none;
+     
+        
+        
+
+
+    }
+
+    textarea {
+        width: 100%;
+        padding: 12px 29px;
+        margin: 8px 0;
+        
+       
+       
+    }
+
+    li input {
+        width: 100%;
+        padding: 15px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
 
     .forside-optegn {
         width: 100%;
