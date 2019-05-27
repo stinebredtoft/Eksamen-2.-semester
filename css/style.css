@@ -373,7 +373,6 @@ textarea {
     /*tilmeldingside*/
     .tilmeld {
         color: black;
-        font-family: helvetica;
         font-size: 35px;
         margin-bottom: 4%;
         text-align: center;
@@ -416,6 +415,11 @@ textarea {
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+    }
+    #tilmeldtekst {
+        text-align: center;
+        margin-bottom: 5%;
+        
     }
 
     /*Footer*/
@@ -956,6 +960,12 @@ textarea {
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+    }
+      #tilmeldtekst {
+        text-align: center;
+        margin-bottom: 5%;
+        margin-left: 2%;
+          margin-right: 2%;
     }
 
     /*keyframing SVG*/
