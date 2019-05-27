@@ -371,7 +371,7 @@ textarea {
         padding: 10%;
     }*/
     .circle img {
-        width: 45%;
+        width: 50%;
         padding-top: 10%;
         /*place-self: center;*/
     }
@@ -974,6 +974,7 @@ textarea {
 
     /*SVG optegning*/
     .cls-1 {
+        fill: none;
         stroke: #fff;
         stroke-width: 2.5px;
         animation: optegning 3s linear;
