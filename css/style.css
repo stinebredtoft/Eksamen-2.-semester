@@ -188,6 +188,12 @@ textarea {
         grid-row: 1/2;
     }
 
+    .forside-billede {
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
     /* Selve Artiklerne */
     .artikel,
     .artikel2 {
@@ -371,7 +377,7 @@ textarea {
         padding: 10%;
     }*/
     .circle img {
-        width: 45%;
+        width: 50%;
         padding-top: 10%;
         /*place-self: center;*/
     }
@@ -422,10 +428,11 @@ textarea {
         border-radius: 4px;
         box-sizing: border-box;
     }
+
     #tilmeldtekst {
         text-align: center;
         margin-bottom: 5%;
-        
+
     }
 
     /*Footer*/
@@ -485,6 +492,12 @@ textarea {
     }
 
     .forside {
+        width: 100%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .forside-billede {
         width: 100%;
         grid-column: 1/2;
         grid-row: 1/2;
@@ -952,7 +965,6 @@ textarea {
     }
 
     .submit {
-
         background-color: #4CAF50;
         border: none;
         color: white;
@@ -962,7 +974,6 @@ textarea {
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
-
     }
 
     .flex-outer {
@@ -970,20 +981,12 @@ textarea {
         margin-left: 30%;
         margin-right: 30%;
         list-style: none;
-
-
-
-
-
     }
 
     textarea {
         width: 100%;
         padding: 12px 29px;
         margin: 8px 0;
-
-
-
     }
 
     li input {
@@ -995,43 +998,45 @@ textarea {
         border-radius: 4px;
         box-sizing: border-box;
     }
-      #tilmeldtekst {
+
+    #tilmeldtekst {
         text-align: center;
         margin-bottom: 5%;
         margin-left: 2%;
-          margin-right: 2%;
+        margin-right: 2%;
     }
 
-    /*keyframing SVG*/
-    .optegn-svampen1,
-    .optegn-svampen2 {
+    /*SVG optegning*/
+    .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 2.5px;
+        animation: optegning 3s linear;
+        stroke-dasharray: 900;
+    }
+    .optegn-svampen1, .optegn-svampen2 {
+        fill: none;
+    }
+
+    .artikel,
+    .artikel2 {
         stroke: #fff;
         stroke-dasharray: 200;
-        opacity: 10;
-        animation: animate 5s;
+        stroke-dashoffset: 200;
+        transition: 3s;
     }
 
-    @keyframes animate {
-        0% {
-            opacity: 0;
-            fill: none;
-            stroke-dashoffset: 200;
+    .artikel:hover,
+    .artikel2:hover {
+        stroke-dashoffset: 0;
+    }
+    
+    @keyframes optegning {
+        from {
+            stroke-dashoffset: 900;
         }
-
-        10% {
-            opacity: 10;
-            fill: none;
-            stroke-dashoffset: 200;
-        }
-
-        90% {
-            fill: none;
-        }
-
-        100% {
-            fill: #fff;
+        to {
+            stroke-dasharray: 900;
         }
     }
-
-
 }
