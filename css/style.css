@@ -373,7 +373,6 @@ textarea {
     /*tilmeldingside*/
     .tilmeld {
         color: black;
-        font-family: helvetica;
         font-size: 35px;
         margin-bottom: 4%;
         text-align: center;
@@ -399,8 +398,8 @@ textarea {
     }
 
     textarea {
-        width: 100%;
-        padding: 12px 29px;
+        width: 60%;
+        padding: 12px 20px;
         margin: 8px 0;
         display: inline-block;
         border: 1px solid #ccc;
@@ -409,13 +408,18 @@ textarea {
     }
 
     li input {
-        width: 100%;
-        padding: 12px 20px;
+        width: 60%;
+        padding: 12px 10px;
         margin: 8px 0;
         display: inline-block;
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+    }
+    #tilmeldtekst {
+        text-align: center;
+        margin-bottom: 5%;
+        
     }
 
     /*Footer*/
@@ -956,6 +960,12 @@ textarea {
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+    }
+      #tilmeldtekst {
+        text-align: center;
+        margin-bottom: 5%;
+        margin-left: 2%;
+          margin-right: 2%;
     }
 
     /*keyframing SVG*/
