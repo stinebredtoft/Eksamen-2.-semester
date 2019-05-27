@@ -103,16 +103,6 @@ textarea {
     text-align: center;
 }
 
-#kontakth1 {
-    place-self: start;
-    padding: 5%;
-}
-
-#omh1 {
-    align-self: end;
-    padding: 5%;
-}
-
 
 /*MEDIA QUERY MOBILE */
 @media all and (max-width: 599px) {
@@ -183,6 +173,7 @@ textarea {
         grid-column: 1/2;
         grid-row: 1/2;
         align-self: center;
+        text-align: center;
         font-size: 50px;
     }
 
@@ -321,21 +312,6 @@ textarea {
     }
 
     /* eventside */
-    .event-underoverskrift {
-        grid-row: 1/2;
-        text-align: center;
-        color: gray;
-        padding-top: 10%;
-    }
-
-    #event-overskrift {
-        grid-row: 2/3;
-        color: gray;
-        text-align: center;
-        justify-self: center;
-    }
-
-
     .event-tekst {
         margin: 0 5% 5%;
         margin-bottom: 10%;
