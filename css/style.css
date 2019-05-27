@@ -192,6 +192,7 @@ textarea {
         width: 100%;
         grid-column: 1/2;
         grid-row: 1/2;
+        fill: #fff;
     }
 
     /* Selve Artiklerne */
@@ -273,23 +274,27 @@ textarea {
     .gro-guide {
         display: grid;
         justify-items: center;
-        margin: 0 0 10%;
+        background-color: #79beb9;
     }
 
     .gro-guide h2 {
         text-align: center;
-        color: gray;
+        color: white;
+        letter-spacing: 3px;
         margin: 10% 0 0;
         grid-row: 1/2;
     }
 
     .gro-guide p {
         margin: 0 3%;
+        color: white;
+        margin: 10% 3% 10%;
     }
 
     /*Billedegalleri*/
     .billedegalleri {
         background-image: url(../images/myceliumsbaggrund.png);
+        width: 100%;
     }
 
     .galleri {
@@ -426,7 +431,6 @@ textarea {
     #tilmeldtekst {
         text-align: center;
         margin-bottom: 5%;
-
     }
 
     /*Footer*/
@@ -489,12 +493,14 @@ textarea {
         width: 100%;
         grid-column: 1/2;
         grid-row: 1/2;
+        margin: 0 0 10%;
     }
 
     .forside-billede {
         width: 100%;
         grid-column: 1/2;
         grid-row: 1/2;
+        fill: #fff;
     }
 
     /* Selve Artiklerne */
@@ -524,7 +530,6 @@ textarea {
     }
 
     /* Slutter her*/
-
     .svamp {
         display: grid;
         align-items: end;
@@ -685,7 +690,6 @@ textarea {
     }
 
     .submit {
-
         background-color: #4CAF50;
         border: none;
         color: white;
@@ -695,7 +699,6 @@ textarea {
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
-
     }
 
     .flex-outer {
@@ -703,8 +706,6 @@ textarea {
         flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
-
-
     }
 
     textarea {
@@ -734,7 +735,7 @@ textarea {
         grid-gap: 2%;
         justify-content: space-evenly;
         justify-items: center;
-        padding: 5%;
+        padding: 3% 3% 0;
     }
 
     #SoMe {
@@ -784,7 +785,15 @@ textarea {
     .artikel,
     .artikel2 {
         width: 95%;
-        margin: 5% 0;
+        stroke: #fff;
+        stroke-dasharray: 200;
+        stroke-dashoffset: 200;
+        transition: 3s linear;
+    }
+
+    .artikel:hover,
+    .artikel2:hover {
+        stroke-dashoffset: 0;
     }
 
     .artikel .boks,
@@ -804,7 +813,7 @@ textarea {
     }
 
     .artikel2 .artikel-billede {
-        width: 80%;
+        width: 100%;
         grid-column: 3/4;
         grid-row: 1/3;
         justify-self: end;
@@ -829,7 +838,8 @@ textarea {
         grid-column: 3/4;
         grid-row: 2/3;
         align-self: start;
-        color: white
+        color: white;
+        margin: 3%;
     }
 
     .artikel2 p {
@@ -837,6 +847,7 @@ textarea {
         grid-row: 2/3;
         align-self: start;
         color: white;
+        margin: 3%;
     }
 
     .svamp {
@@ -850,11 +861,12 @@ textarea {
         grid-row: 2/3;
         grid-column: 3/4;
         width: 60%;
+        align-self: end;
     }
 
     .svampebuket {
         width: 15%;
-        margin: 0;
+        margin: 10% 0;
     }
 
     /*eventside*/
@@ -880,10 +892,6 @@ textarea {
     }
 
     /*Billedgalleri*/
-    .billedegalleri {
-        margin: 100px;
-    }
-
     .galleri {
         width: 70%;
         margin: 0 auto;
@@ -896,9 +904,9 @@ textarea {
     .gro-guide {
         grid-template-columns: auto auto auto;
         padding: 50px;
-        margin: 5% 0;
+        margin: 0;
         align-items: center;
-        background-color: #20a5a5;
+        background-color: #79beb9;
         grid-gap: 10px;
     }
 
@@ -980,27 +988,17 @@ textarea {
         animation: optegning 3s linear;
         stroke-dasharray: 900;
     }
-    .optegn-svampen1, .optegn-svampen2 {
+
+    .optegn-svampen1,
+    .optegn-svampen2 {
         fill: none;
     }
 
-    .artikel,
-    .artikel2 {
-        stroke: #fff;
-        stroke-dasharray: 200;
-        stroke-dashoffset: 200;
-        transition: 3s;
-    }
-
-    .artikel:hover,
-    .artikel2:hover {
-        stroke-dashoffset: 0;
-    }
-    
     @keyframes optegning {
         from {
             stroke-dashoffset: 900;
         }
+
         to {
             stroke-dasharray: 900;
         }
