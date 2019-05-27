@@ -987,8 +987,8 @@ footer {
         fill: none;
         stroke: #fff;
         stroke-width: 2.5px;
-        animation: optegning 3s linear;
-        stroke-dasharray: 900;
+        animation: optegning 5s linear;
+        stroke-dasharray: 1250;
     }
 
     .optegn-svampen1,
@@ -998,11 +998,11 @@ footer {
 
     @keyframes optegning {
         from {
-            stroke-dashoffset: 900;
+            stroke-dashoffset: 1250;
         }
 
         to {
-            stroke-dasharray: 900;
+            stroke-dasharray: 1250;
         }
     }
 }
