@@ -103,9 +103,13 @@ textarea {
     text-align: center;
 }
 
-#kontakth1,
-#omh1 {
+#kontakth1 {
     place-self: start;
+    padding: 5%;
+}
+
+#omh1 {
+    align-self: end;
     padding: 5%;
 }
 
@@ -494,6 +498,7 @@ textarea {
         font-size: 50px;
         text-align: center;
     }
+    
 
     .forside {
         width: 100%;
@@ -732,6 +737,13 @@ textarea {
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
+    }
+    
+    /*OM*/
+    
+      #omh1 {
+        padding-bottom: 12%;
+        justify-self: start;
     }
     
 
