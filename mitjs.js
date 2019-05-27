@@ -28,6 +28,6 @@ $(document).ready(function () {
             statusElm.append('<div>Message is not valid</div')
         }
     })
-})
+});
 
 /* Animering */
