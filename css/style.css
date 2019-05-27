@@ -192,6 +192,7 @@ footer {
         align-self: center;
         text-align: center;
         font-size: 50px;
+        text-shadow: 2px 2px 60px black;
     }
 
     .forside {
@@ -488,6 +489,7 @@ footer {
         align-self: center;
         font-size: 50px;
         text-align: center;
+        text-shadow: 2px 2px 60px black;
     }
 
 
@@ -766,7 +768,7 @@ footer {
 
     /*Overskrift ved header*/
     h1 {
-        font-size: 80px;
+        font-size: 100px;
     }
     
     /*Selve artiklerne*/
