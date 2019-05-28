@@ -15,7 +15,8 @@ a {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Neucha', cursive;
     letter-spacing: 1px;
     color: #fff;
@@ -118,7 +119,7 @@ footer {
     grid-row: 2/3;
     grid-column: 1 / span2;
     padding-top: 5%;
-    place-self: center; 
+    place-self: center;
 }
 
 /*MEDIA QUERY MOBILE */
@@ -319,7 +320,6 @@ footer {
     }
 
     .galleri img {
-        background-color: aquamarine;
         width: 100%;
     }
 
@@ -331,14 +331,12 @@ footer {
 
     /* eventside */
     .event-tekst {
-        margin: 0 5% 5%;
-        margin-bottom: 10%;
-        margin-top: 5%;
+        margin: 5% 5% 5%;
         text-align: center;
     }
 
     .event-manchet {
-        margin: 0 5%;
+        margin: 5% 5% 0;
         padding: 0 0 5%;
         text-align: center;
         border-bottom: 1px solid black;
@@ -351,38 +349,33 @@ footer {
         margin: 2% 5% 0;
     }
 
-    .eventcontainer h3 {
+    .eventcontainer h2 {
         color: gray;
     }
 
     .circle {
-        width: 200px;
-        height: 200px;
+        display: grid;
+        place-items: center;
+        margin: 5% 0;
+        width: 250px;
+        height: 250px;
         border-radius: 50%;
         font-size: 18px;
         color: white;
-        line-height: 50px;
         text-align: center;
         background: #20a5a5;
-        margin-bottom: 8%;
-        margin-top: 6%;
-        /*display: grid;
-        grid-template-columns: auto;*/
+    }
+
+    .eventcontainer h3 {
+        align-self: start;
+    }
+
+    .circle img {
+        width: 45%;
     }
 
     .imagecontainer {
         display: none;
-    }
-    
-    /*.cirkelindhold {
-        align-self: center;
-        justify-self: center; 
-        padding: 10%;
-    }*/
-    .circle img {
-        width: 50%;
-        padding-top: 10%;
-        /*place-self: center;*/
     }
 
     /*tilmeldingside*/
@@ -497,7 +490,7 @@ footer {
         width: 100%;
         grid-column: 1/2;
         grid-row: 1/2;
-        margin: 0 0 10%;
+        margin: 0 0 3%;
     }
 
     .forside-billede {
@@ -628,24 +621,9 @@ footer {
     }
 
     /*eventside*/
-    .event-underoverskrift {
-        grid-row: 1/2;
-        color: gray;
-        text-align: center;
-        font-size: 25px;
-        padding-top: 10%;
-    }
-
-    #event-overskrift {
-        grid-row: 2/3;
-        font-size: 60px;
-        color: gray;
-        text-align: center;
-    }
-
     .event-tekst {
         color: gray;
-        margin: 0 5% 5%;
+        margin: 0 0 5%;
         text-align: center;
     }
 
@@ -661,26 +639,42 @@ footer {
         display: grid;
         border-bottom: 1px solid black;
         justify-items: center;
-        margin: 2% 5% 0;
+        margin: 0 5% 0;
         padding: 0 10%;
         color: gray;
     }
 
-    .circle {
-        width: 330px;
-        height: 330px;
-        border-radius: 50%;
-        font-size: 18px;
-        color: white;
-        line-height: 50px;
-        text-align: center;
-        background-color: #20a5a5;
-        margin-bottom: 5%;
+    .circle img {
+        width: 45%;
     }
 
-    .circle img {
-        width: 50%;
-        margin-top: 10%;
+    .eventcontainer h2 {
+        font-size: 40px;
+        text-align: center;
+        color: gray;
+        margin: 5% 0 0;
+    }
+
+    .circle {
+        display: grid;
+        place-items: center;
+        margin: 5% 0;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        text-align: center;
+        background: #20a5a5;
+    }
+
+    .eventcontainer h3 {
+        align-self: start;
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
+    .dato {
+        font-size: 35px;
+        font-family: 'Neucha', cursive;
     }
 
     /*tilmeldingside*/
@@ -770,7 +764,7 @@ footer {
     h1 {
         font-size: 100px;
     }
-    
+
     /*Selve artiklerne*/
     .artikel,
     .artikel2 {
@@ -862,9 +856,20 @@ footer {
     /*eventside*/
     .billedcontainer {
         display: grid;
+        margin: 0 auto;
+        width: 90%;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto;
         grid-template-areas: "t b";
+    }
+    .event-tekst {
+        margin: 0;
+        padding: 0 5%;
+    }
+    
+    .event-manchet {
+        font-size: 40px;
+        padding: 0 0 3%;
     }
 
     .amazingcontainer {
@@ -873,16 +878,8 @@ footer {
         width: 100%;
     }
 
-    .event-underoverskrift {
-        grid-column: 1/2;
-    }
-
-    #event-overskrift {
-        grid-column: 1/2;
-    }
-
     .circle:hover {
-        background-color: aqua;
+        background-color: #79beb9;
         transition: 1.5s;
     }
 
@@ -890,9 +887,14 @@ footer {
         display: grid;
         grid-area: b;
     }
-
-    #billede2 {
+    
+    .imagecontainer img {
         width: 100%;
+    }
+    
+    .eventcontainer {
+        padding: 0;
+        margin: 0;
     }
 
     /*Billedgalleri*/
