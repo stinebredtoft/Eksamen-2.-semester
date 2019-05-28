@@ -1,13 +1,16 @@
+
 $(document).ready(function () {
     $('.submit').click(function (event) {
         console.log('clicked button')
-
+        
+/* variablerne som linker til HTML*/ 
         var email = $('.email').val()
         var subject = $('.subject').val()
         var message = $('.message').val()
         var statusElm = $('.status')
         statusElm.empty()
 
+/*funktionerne som JQ validere ud efter, gennem if elsestate*/ 
         if (email.length > 5 && email.includes('@') && email.includes('.')) {
             statusElm.append('<div>Email is valid</div')
         } else {
