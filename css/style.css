@@ -862,11 +862,12 @@ footer {
         grid-template-rows: auto;
         grid-template-areas: "t b";
     }
+
     .event-tekst {
         margin: 0;
         padding: 0 5%;
     }
-    
+
     .event-manchet {
         font-size: 40px;
         padding: 0 0 3%;
@@ -887,11 +888,11 @@ footer {
         display: grid;
         grid-area: b;
     }
-    
+
     .imagecontainer img {
         width: 100%;
     }
-    
+
     .eventcontainer {
         padding: 0;
         margin: 0;
@@ -987,17 +988,17 @@ footer {
     }
 
     /*SVG optegning*/
+    .optegn-svampen1,
+    .optegn-svampen2 {
+        fill: none;
+    }
+
     .cls-1 {
         fill: none;
         stroke: #fff;
         stroke-width: 2.5px;
         animation: optegning 5s linear;
         stroke-dasharray: 1250;
-    }
-
-    .optegn-svampen1,
-    .optegn-svampen2 {
-        fill: none;
     }
 
     @keyframes optegning {
